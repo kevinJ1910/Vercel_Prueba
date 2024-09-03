@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-import { OrbitControls } from "@react-three/drei";
+import { TrackballControls } from "@react-three/drei"; // Usar TrackballControls
 import { Canvas } from "@react-three/fiber";
 import House from "./House";
 import React from "react";
@@ -10,13 +10,12 @@ const World = () => {
     position: [2, 0, 5],
   };
 
-  const {transformsHouse} = useHouseStore();
+  const { transformsHouse } = useHouseStore();
 
   return (
     <React.Fragment>
-      <h1 className="title"> La casa tiene una rotación de {transformsHouse.rotation.y} </h1>
       <Canvas camera={cameraSettings}>
-        <OrbitControls enablePan={false} />
+        <TrackballControls /> {}
         <ambientLight intensity={1.5} />
         <directionalLight position={[0, 10, 10]} />
         <House />

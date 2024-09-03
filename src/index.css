@@ -1,13 +1,20 @@
-button {
-  padding: 10px 20px;
-  font-size: medium;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+html, 
+body,
+#root{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(55, 55, 83);
 }
 
-button:hover {
-  background-color: #0056b3;
+canvas{
+    touch-action: none;
+}
+
+.title{
+    position:absolute;
+    z-index: 1;
+    color: white;
 }
