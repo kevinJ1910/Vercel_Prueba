@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./pages/login/Login.jsx";
-import Quiz from "./pages/quiz/Quiz.jsx";
+import World from "./pages/campo/World.jsx";
 
 const router = createBrowserRouter([
   {
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/Quiz",
-    element: <Quiz />,
+    path: "/World",
+    element: <World />,
   },
 ]);
 createRoot(document.getElementById("root")).render(
